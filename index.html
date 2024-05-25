@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Consultorio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Reservas de Consultorio</h1>
+        <div>
+            <input id="patientName" type="text" placeholder="Nombre del Paciente">
+            <input id="date" type="date" placeholder="Fecha (YYYY-MM-DD)">
+            <button id="btn-add">Agregar Reserva</button>
+        </div>
+        <div>
+            <input id="searchDate" type="date" placeholder="Buscar por fecha (YYYY-MM-DD)">
+            <button id="btn-search">Buscar Reserva</button>
+        </div>
+        <div id="results"></div>
+        <div id="message"></div>
+        <div id="error"></div>
+        <div>
+            <h2>Eliminar Reserva</h2>
+            <input id="deleteDate" type="date" placeholder="Fecha">
+            <input id="deletePatientName" type="text" placeholder="Nombre del Paciente">
+            <button id="btn-delete">Eliminar Reserva</button>
+        </div>
+    </div>
+    <script type="module" src="./src/controllers/script.js"></script>
+</body>
+</html>
