@@ -113,18 +113,18 @@ class BST {
         } else if (value.date > node.value.date) {
             node.right = this.deleteNode(node.right, value);
         } else {
-            // Node to delete found
+            
             if (node.left === null && node.right === null) {
-                // Node has no children
+                
                 node = null;
             } else if (node.left === null) {
-                // Node has one child (right)
+                
                 node = node.right;
             } else if (node.right === null) {
-                // Node has one child (left)
+               
                 node = node.left;
             } else {
-                // Node has two children
+              
                 const minRight = this.findMinNode(node.right);
                 node.value = minRight.value;
                 node.right = this.deleteNode(node.right, minRight.value);
